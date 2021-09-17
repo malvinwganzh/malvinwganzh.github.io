@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+a:link, a:visited{
+   text-decoration: underline #F4D19B;
+   color: #F4D19B;
+   
+}
+
+body{
+    background-color: #FDFCE5 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -500px;
+}
+
+
+
+span{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    opacity: 0%;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px 20px 5px 20px;
+    cursor: default;
+}
+
+.text-move{
+    opacity: 100%;
+    transform: translatex(190px);
+}
+
+
+.logo{
+    max-height :400px;
+    max-width: 600px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.logoClick{
+    transform: translatex(170px);
+    opacity: 0;
+    cursor: default;
+}
+
+.button-main{
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #c1f0f0;
+    box-shadow: 5px 3px #869eb1;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  .show-button{
+      transform: translatex(170px);
+      opacity: 100%;
+  }
+  
+  .button-main:hover{
+      transform: translateY(-4px);
+      transform: translateX(170px);
+      box-shadow: 5px 6px #869eb1;
+  }
+  
+  .button-main:active{
+      transform: translateY(4px);
+      transform: translateX(174px);
+      background-color: #607e97;
+      box-shadow: 5px 3px #869eb1;
+      transition: 0.2s;
+  }
+  
+
+
+   @media (max-width: 1000px) {
+    .show-button{
+        transform: translatey(-270px);
+        opacity: 100%;
+    }
+    .button-main:hover{
+        transform: translateY(-270px);
+        box-shadow: 5px 6px #869eb1;
+    }
+    
+    .button-main:active{
+        transform: translateY(-264px);
+        background-color: #607e97;
+        box-shadow: 5px 3px #869eb1;
+        transition: 0.2s;
+    }
+    .logo{
+        max-width: 312px;
+    }
+    .logoClick{
+        transform: translatey(-170px);
+        
+    }
+    .text-container{
+        font-size: 17px;
+        padding: 5px 20px 5px 20px;
+    }
+  .text-move{
+       transform: translatey(-290px);
+     }
+    
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }   
+
+   }
+
+
+.text-container h4{
+    font-family: 'Dancing Script', cursive;
+}

@@ -5,7 +5,9 @@ a:link, a:visited{
    color: #F4D19B;
    
 }
-
+.text{
+    margin-left: 100px;
+}
 body{
     background-color: #FDFCE5 ;
     display: flex;
@@ -34,6 +36,7 @@ span{
     border-radius: 20px 20px 20px 20px;
     padding: 5px 20px 5px 20px;
     cursor: default;
+    line-height: 23px;
 }
 
 .text-move{
@@ -44,15 +47,14 @@ span{
 
 .logo{
     max-height :400px;
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
-    
 }
 
 .logoClick{
-    transform: translatex(170px);
+    transform: translateX(170px);
     opacity: 0;
     cursor: default;
 }
@@ -109,13 +111,17 @@ span{
         transition: 0.2s;
     }
     .logo{
-        max-width: 312px;
+        margin-top: 50px;
+        min-width: 500px;
+        min-height: 500px;
     }
     .logoClick{
         transform: translatey(-170px);
         
     }
     .text-container{
+        min-width: 500px;
+        min-height: 500px;
         font-size: 17px;
         padding: 5px 20px 5px 20px;
     }
@@ -134,4 +140,5 @@ span{
 
 .text-container h4{
     font-family: 'Dancing Script', cursive;
+    font-size: 13px;
 }

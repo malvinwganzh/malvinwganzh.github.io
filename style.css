@@ -5,9 +5,7 @@ a:link, a:visited{
    color: #F4D19B;
    
 }
-.text{
-    margin-left: 100px;
-}
+
 body{
     background-color: #FDFCE5 ;
     display: flex;
@@ -33,7 +31,7 @@ span{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     background-color: white;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     padding: 5px 20px 5px 20px;
     cursor: default;
     line-height: 23px;
@@ -45,19 +43,6 @@ span{
 }
 
 
-.logo{
-    max-height :400px;
-    max-width: 500px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.logoClick{
-    transform: translateX(170px);
-    opacity: 0;
-    cursor: default;
-}
 
 .button-main{
     border: none;
@@ -68,7 +53,7 @@ span{
     box-shadow: 5px 3px #869eb1;
     cursor: pointer;
     transition: 0.5s;
-    opacity: 0%;
+    opacity: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
   }
@@ -76,22 +61,68 @@ span{
   .show-button{
       transform: translatex(170px);
       opacity: 100%;
-  }
-  
+  }  
   .button-main:hover{
-      transform: translateY(-4px);
       transform: translateX(170px);
       box-shadow: 5px 6px #869eb1;
-  }
-  
+      }  
   .button-main:active{
       transform: translateY(4px);
       transform: translateX(174px);
       background-color: #607e97;
       box-shadow: 5px 3px #869eb1;
       transition: 0.2s;
-  }
-  
+  }  
+  .logo{
+    max-height :400px;
+    max-width: 500px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logoClick{
+    transform: translateX(170px);
+    opacity: 0;
+    cursor: default;
+}
+
+
+.darrius-savior{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: small;
+    margin-top:40px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 170px;
+    height: 100px;
+    background-color: #c1f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translatex(1200px);
+    transition: 0.3s;
+    cursor: default;
+}
+
+.darrius-savior:hover{
+    box-shadow: gold 2px 4px 4px 0px;
+    width: 160px;
+    height: 90px;
+}
+
+.darrius-savior span{
+    margin: 5px;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: teal;
+    cursor: pointer;
+}
+.darrius-savior link{
+    color: black;
+    text-decoration: none;
+}
 
 
    @media (max-width: 1000px) {
@@ -133,8 +164,13 @@ span{
         display: flex;
         flex-direction: column-reverse;
         margin-left: 0;
+     
     }   
-
+    .darrius-savior{
+        transform:translateX(0px);
+        margin-bottom: 20px;
+    }
+  
    }
 
 
